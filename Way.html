@@ -1,0 +1,197 @@
+<html>
+
+
+<head><link href="style2.css" rel="stylesheet"  type="text/css">
+
+
+<title>Your Way!</title>
+
+<script type="text/javascript">
+function getValue(varname)
+{
+  var url = window.location.href;
+  var qparts = url.split("?");
+  if (qparts.length == 0)
+  {
+    return "";
+  }
+
+
+  var query = qparts[1];
+  var vars = query.split("&");
+  var value = "";
+
+  for (i=0;i<vars.length;i++)
+  {
+    var parts = vars[i].split("=");
+    
+    if (parts[0] == varname)
+    {
+      value = parts[1];
+      break;
+    }
+  }
+  
+  value = unescape(value);
+  value.replace(/\+/g," ");
+  return value;
+}
+
+
+</script>
+</head>
+<body>
+<body>
+<div id="wrap">
+	<div id="contents">
+		<div id="heading">
+
+		<table border="0" height="100%" width="100%">
+		<tr><td>
+		<a href="http://www.google.co.in/"  target="_blank">
+		<img src="google_logo.jpg" width="150px" height="80px">
+		</a></td><td>
+		<p align="center">
+		<font size="10" color="#660000" 
+		face="Bradley Hand ITC"><b>
+
+
+
+		GETTINGTHERE.COM
+
+
+
+		</font></p></b>
+
+
+
+</td>
+		<td><a href="http://www.microsoft.com"  target="_blank"><img src="microsoft-logo1.jpg" width="150px" height="80px">
+		</a></td>
+		</tr>
+			</table>
+
+		</div>
+
+
+		<div id="table">
+		<table border="1" width="100%" height="100%">
+		<tr ><td align="center"><b><a href="homepage.html" target="_self" style="text-decoration:none; color:#252327;">Home</a></b></td>
+		<td align="center"><b><a href="About.html" target="_self" style="text-decoration:none; color:#252327;" >About</a></b></td>
+		<td align="center"><b><a href="form5.html" target="_self" style="text-decoration:none; color:#252327;">Register</a></b></td>
+		<td align="center"><b><a href="Downloads.html" target="_self" style="text-decoration:none; color:#252327;">Downloads</a></b></td>
+		<td align="center"><b><a href="FAQs.html" target="_self" style="text-decoration:none; color:#252327;">FAQ&#39;s</a></b></td>
+		<td align="center"><b><a href="Help.html" target="_self" style="text-decoration:none; color:#252327;">Help</a></b></td>
+		<td align="center"><b><a href="ContactUs.html" target="_self" style="text-decoration:none; color:#252327;">Contact Us</a></b></td>
+
+
+
+
+		<td colspan="1" rowspan="1" align="right"> <t> <b> <font size=4 color="#000066"> 
+		<script type="text/javascript">
+		<!--
+		var currentTime = new Date()
+		var hours = currentTime.getHours()
+		var minutes = currentTime.getMinutes()
+		if (minutes < 10){
+		minutes = "0" + minutes
+			}
+		document.write(hours + ":" + minutes + " ")
+
+		//-->
+		</script>
+		</b></font>
+		</t>
+		</td>
+		</tr>
+
+
+
+		<tr><td colspan="8" rowspan="4" align="center"><a href="http://www.yatra.com/connect/www/content/ck.php?n=ac31e2f4&amp;cb=0808201101" target="_blank"><img src="http://www.yatra.com/connect/www/content/avw.php?zoneid=432&amp;cb=0808201101&amp;n=ac31e2f4" border="0" alt=""></a>
+</td></tr>
+</table>
+</div>
+
+
+
+		<div id="main" >
+		<form  action="route2.do"  method="get">
+		
+		<script type="text/javascript">
+		var s = getValue("start");
+		document.write("Source Selected : "+s+"</br>");
+		var d = getValue("dest");
+		document.write("Destination Selected : "+d+"</br></br>");
+		var s1,s2,s3;
+		var d1,d2,d3,d4;
+		if(s=="Andheri")
+		{s1="Four Bunglows";
+		s2="Lokhandwala";
+		s3="Indian Oil";
+		}
+		if(d=="Andheri")
+		{d1="Four Bunglows";
+		d2="Lokhandwala";
+		d3="Indian Oil";
+		}
+		if(s=="Bandra")
+		{
+		s1="Carter Road";
+		s2="Linking Road";
+		s3="Pali";
+		}
+		if(d=="Santacruz")
+		{
+		d1="Station Road";
+		d2="1st Hasanabad";
+		d3="Convent Street";
+		d4="Vakola"
+		}
+		if(d=="Bandra")
+		{
+		d1="Carter Road";
+		d2="Linking Road";
+		d3="Pali";
+		}
+		if(d=="Kandivili")
+		{
+		d1="Thakur Village";
+		d2="Aadarsh Colony";
+		d3="Mahavir Nagar";
+		d4="Charkop"
+		}
+		if(d=="Borivali")
+		{
+		d1="Yogi Nagar";
+		d2="TPS Colony";
+		d3="Gorai";
+		d4="Ekser Road";
+		}
+		document.write('Select the area in '+s+' ');
+		document.write('<select name=source size="1">');		document.write('<option>'+s1);		document.write('<option>'+s2);
+		document.write('<option>'+s3);		document.write('</select></br></br>');
+
+		document.write('Select the area in '+d+' ');
+		document.write('<select name=dest size="1">');		document.write('<option>'+d1);		document.write('<option>'+d2);
+		document.write('<option>'+d3);		document.write('</select></br></br>');
+		
+		</script>
+</br>
+	
+<input type="Submit" value="Get Path!" id="path" >
+
+</form>
+
+
+            </div>
+		</div>
+
+	
+
+</div>
+
+
+</body>
+
+
+</html>

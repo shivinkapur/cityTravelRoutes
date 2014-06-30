@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<servlet>
+		<servlet-name>Auth</servlet-name>
+		<servlet-class>AuthRoute</servlet-class>
+	</servlet>
+		
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>RegisterServletn</servlet-class>
+	</servlet>	
+	<servlet>
+		<servlet-name>Authenticate</servlet-name>
+		<servlet-class>AuthUser</servlet-class>
+	</servlet>
+
+<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>loggingout</servlet-class>
+	</servlet>
+
+<servlet>
+		<servlet-name>Transport2</servlet-name>
+		<servlet-class>TransportServlet2</servlet-class>
+	</servlet>
+
+		<servlet>
+		<servlet-name>Transport</servlet-name>
+		<servlet-class>TransportServlet</servlet-class>
+	</servlet>	
+
+
+
+	<servlet-mapping>
+		<servlet-name>Auth</servlet-name>
+		<url-pattern>/abc.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/xyz.do</url-pattern>
+	</servlet-mapping>
+
+<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/out.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/reg.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Authenticate</servlet-name>
+		<url-pattern>/uvw.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Transport2</servlet-name>
+		<url-pattern>/route2.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Transport</servlet-name>
+		<url-pattern>/route.do</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
